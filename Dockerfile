@@ -3,7 +3,7 @@ FROM hashicorp/packer:light
 
 RUN apk update && \
     apk upgrade && \
-    apk add curl && \
+    apk add curl=7.83.1-r3 && \
     apk add git=2.36.2-r0 && \
     apk add openssl=1.1.1q-r0 && \
     apk add gnupg=2.2.35-r4 && \
